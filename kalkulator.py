@@ -26,6 +26,7 @@ with c4:
     st.write (a*b)
   elif Operators == ':':
     if b == 0:
+      st.write ()
       st.write ('You cannot divide by zero, Dummy :sparkles:!')
     else:
       st.write ('Result')
