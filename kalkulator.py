@@ -9,7 +9,7 @@ with c1:
   a = st.number_input('Real Integers', value=0)
 
 with c2:
-  Operators = selectbox('Operators',('+', '-', 'x', ':'), key='k1')
+  Operators = st.selectbox('Operators',('+', '-', 'x', ':'), key='k1')
 
 with c3:
   b = st.number_input('Real Integers', value=0)
