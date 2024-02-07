@@ -15,13 +15,13 @@ with c3:
   b = st.number_input('Real Integers', value=0)
 
 with c4:
-  if c2 == '+':
+  if Operators == '+':
     st.write (a + b)
-  if c2 == '-':
+  elif Operators == '-':
     st.write (a - b)
-  if c2 == 'x':
+  elif Operators == 'x':
     st.write (a*b)
-  if c2 == ':':
+  elif Operators == ':':
     if b == 0:
       st.write ('You cannot divide by zero, Dummy :sparkles:!')
     else:
