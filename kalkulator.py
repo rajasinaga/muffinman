@@ -1,6 +1,6 @@
 import streamlit as st
 st.header('A Very Unconvenient Calculator')
-st.subheader('Plot')
+st.subheader('why are you here?')
 
 #Definitions
 c1, c2, c3, c4 = st.columns(4)
