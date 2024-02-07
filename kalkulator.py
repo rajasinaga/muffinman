@@ -16,16 +16,16 @@ with c3:
 
 with c4:
   if c2 == '+':
-    return a + b
+    st.write (a + b)
   if c2 == '-':
-    return a - b
+    st.write (a - b)
   if c2 == 'x':
-    return a*b
+    st.write (a*b)
   if c2 == ':':
     if b == 0:
-      return "You cannot divide by zero, Dummy :sparkles:!"
+      st.write ('You cannot divide by zero, Dummy :sparkles:!')
     else:
-      return a/b
+      st.write (a/b)
 
 st.caption('Really, Just use the calculator on your phone!')
     
