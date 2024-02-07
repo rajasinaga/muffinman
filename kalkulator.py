@@ -16,15 +16,19 @@ with c3:
 
 with c4:
   if Operators == '+':
+    st.write ('Result')
     st.write (a + b)
   elif Operators == '-':
+    st.write ('Result')
     st.write (a - b)
   elif Operators == 'x':
+    st.write ('Result')
     st.write (a*b)
   elif Operators == ':':
     if b == 0:
       st.write ('You cannot divide by zero, Dummy :sparkles:!')
     else:
+      st.write ('Result')
       st.write (a/b)
 
 st.caption('Really, Just use the calculator on your phone!')
