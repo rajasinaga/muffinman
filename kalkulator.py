@@ -33,4 +33,4 @@ with c4:
       st.write (a/b)
 
 st.caption('Really, Just use the calculator on your phone!')
-    
+st.caption('Copyright © Zevansinaga 2024')
