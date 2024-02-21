@@ -42,7 +42,7 @@ st.write('nilai y:', y)
 # Plot the function
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.plot(x, y, label='$f(x) = 18x^2 + x - 10$', color='b')
-ax.fill_between(x, y, where=((x >= x_values[0]) & (x <= x_values[1])), color='skyblue', alpha=0.5)  # Shading the integral area
+ax.fill_between(x, y, where=((x >= x_values[0]) & (x <= x_values[1])), color='black', alpha=0.5)  # Shading the integral area
 ax.set_xlabel('x')
 ax.set_xlabel('x')
 ax.set_ylabel('f(x)')
