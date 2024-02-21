@@ -8,6 +8,13 @@ y = st.slider('Pilih Rentang', 0.0, 10.0, 5.0)
 st.write('nilai y:', y)
 def f(x):
   return 18 * x ** 2 + x - 10
+def trapezoidal_rule(f, a, b, n):
+    h = (b - a) / n
+    integral = 0.5 * (f(a) + f(b))
+    for i in range(1, n):
+        integral += f(a + i * h)
+    integral *= h
+    return integral
 
 t = np.linspace(x[0]*np.pi, x[1]*np.pi, 100)
 u = np.sin(y*t)
@@ -43,6 +50,7 @@ ax.legend()
 st.pyplot(fig)
 
 # Calculate the definite integral
-integral_value, _ = quad(f, x_values[0], x_values[1])
+integral_value = trapezoidal_rule(f, x_values[0], x_values[1], 1000)  # Using 1000 intervals
 st.write(f"The definite integral over the interval [{x_values[0]}, {x_values[1]}] is: {integral_value}")
+
 
