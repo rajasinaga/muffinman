@@ -8,6 +8,7 @@ y = st.slider('Pilih Rentang', 0.0, 10.0, 5.0)
 st.write('nilai y:', y)
 def f(x):
   return 18 * x ** 2 + x - 10
+# Define the trapezoidal rule for numerical integration
 def trapezoidal_rule(f, a, b, n):
     h = (b - a) / n
     integral = 0.5 * (f(a) + f(b))
@@ -34,14 +35,6 @@ st.pyplot(fig)
 y = f(x)
 st.write('nilai y:', y)
 
-# Define the trapezoidal rule for numerical integration
-def trapezoidal_rule(f, a, b, n):
-    h = (b - a) / n
-    integral = 0.5 * (f(a) + f(b))
-    for i in range(1, n):
-        integral += f(a + i * h)
-    integral *= h
-    return integral
 
 # Create a slider for selecting the integral interval
 integral_interval = st.slider('Pilih Rentang Integral', -10.0, 10.0, (-5.0, 5.0))
