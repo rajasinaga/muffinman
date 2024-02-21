@@ -55,4 +55,8 @@ st.pyplot(fig)
 integral_value = trapezoidal_rule(f, x_values[0], x_values[1], 1000)  # Using 1000 intervals
 st.write(f"The definite integral over the interval [{x_values[0]}, {x_values[1]}] is: {integral_value}")
 
-
+def animate_slider():
+    slider_placeholder = st.empty()
+    for x_val in np.linspace(-10, 10, 100):
+        slider_placeholder.slider('Pilih Rentang X', -10.0, 10.0, x_val)
+animate_slider()
