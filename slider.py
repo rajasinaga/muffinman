@@ -25,7 +25,7 @@ st.pyplot(fig)
 
 # Create a slider for x values
 x_values = st.slider('Pilih Rentang X', -10.0, 10.0, (0.0, 1.0))
-y_values = st.slider('Pilih Rentang Y', -100.0, 100.0, (0.2, 0.5)
+y_values = st.slider('Pilih Rentang Y', -100.0, 100.0, (0.2, 0.5))
 # Generate x values for the function
 x = np.linspace(x_values[0], x_values[1], 100)
 
