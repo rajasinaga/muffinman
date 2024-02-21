@@ -50,7 +50,7 @@ integral_value = trapezoidal_rule(f, integral_interval[0], integral_interval[1],
 st.write(f"The definite integral over the interval [{integral_interval[0]}, {integral_interval[1]}] is: {integral_value}")
 
 # Show the selected interval on the plot
-ax.fill_between(x, y, where=((x >= integral_interval[0]) & (x <= integral_interval[1])), color='skyblue', alpha=0.5)
+ax.fill_between(x, y, where=((x >= integral_interval[0]) & (x <= integral_interval[1])), color='black', alpha=0.5)
 
 ax.set_xlabel('x')
 ax.set_ylabel('f(x)')
