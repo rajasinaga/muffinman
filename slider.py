@@ -31,10 +31,6 @@ ax.tick_params(axis='x', labelsize=15)
 plt.grid(color='green', linestyle='-.', linewidth= .5)
 st.pyplot(fig)
 
-# Calculate corresponding y values
-y = f(x)
-st.write('nilai y:', y)
-
 
 # Create a slider for selecting the integral interval
 integral_interval = st.slider('Pilih Rentang Integral', -10.0, 10.0, (-5.0, 5.0))
