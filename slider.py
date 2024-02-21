@@ -35,10 +35,18 @@ x_values = st.slider('Pilih Rentang X', -10.0, 10.0, (0.0, 1.0))
 y_values = st.slider('Pilih Rentang Y', -100.0, 100.0, (0.2, 0.5))
 # Generate x values for the function
 x = np.linspace(x_values[0], x_values[1], 100)
+
+# Function to animate the slider
 def animate_slider():
     slider_placeholder = st.empty()
-    for x_val in np.linspace(-10, 10, 100):
-        slider_placeholder.slider('Pilih Rentang X', -10.0, 10.0, x_val)
+    direction = 1
+    while True:
+        for x_val in np.linspace(-10, 10, 100):
+            slider_placeholder.slider('Pilih Rentang X', -10.0, 10.0, x_val)
+            time.sleep(0.05)
+        direction *= -1
+
+# Animate the slider
 animate_slider()
 
 # Calculate corresponding y values
